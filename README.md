@@ -134,5 +134,5 @@ Prática (usando o nosso caso):
 O resultado é conhecido como Mean Absolute Error(MAE), ou em português algo como Erro Absoluto Médio.
 
 Em outras palavras é como se com base na análise do MAE,
-possível chegar na conclusão que o nosso modelo erra cerca R$72,000 nas suas previsões.
+chegassemos na conclusão que o nosso modelo erra cerca R$72,000 nas suas previsões.
 ```
