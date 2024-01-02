@@ -20,7 +20,7 @@ x: 8 | y: 17
 x: 9 | y: 19
 ```
 
-A **IA** vai traçar uma função que sirva para obtermos os seguintes valores, no caso a função que **IA** iria traçar seria:
+A **IA** vai traçar uma função que sirva para obtermos os seguintes valores, no caso a função que **IA** iria traçar seria (em JS):
 ```js
 const f = (x) => console.log(`x: ${x} | y: ${(x*2)+1}`)
 ```
