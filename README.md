@@ -41,3 +41,10 @@ Index | area_quadrada | num_de_quartos | valor_da_casa |
 2     |      082      |       04       |   5.345,000   |
 3     |      075      |       03       |   4.978,000   |
 ```
+
+Temos assim uma equação estimada mais ou menos assim:
+```
+valor_casa1 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
+valor_casa2 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
+valor_casa3 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
+```
