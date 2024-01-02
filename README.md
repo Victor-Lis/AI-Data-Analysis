@@ -49,7 +49,7 @@ valor_casa2 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
 valor_casa3 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
 ```
 
-Para os valores já conhecidos podemos apenas subistituir:
+Para os valores já conhecidos podemos apenas substituir:
 ```
 valor_casa1 = 3.000,000 + (peso1 * 91) + (peso2 * 4)
 valor_casa2 = 3.000,000 + (peso1 * 82) + (peso2 * 4)
@@ -103,7 +103,7 @@ Ela quantifica o erro com base nos **valores estimados** e nos **valores reais**
 
 ## Existem várias métricas para isso, vamos entender:
 
-### MAE
+### MAE(Mean Absolute Error)
 
 1° - Vamos calcular o erro:
 ```
