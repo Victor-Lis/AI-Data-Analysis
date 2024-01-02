@@ -6,8 +6,7 @@ Ela basicamente vai se assemelhar bastante a uma função matématica ou uma fun
 Temos várias características e valores que são o **X** que através de uma fórmula gerarão o **Y**, a IA basicamente vai descobrir essa fórmula.
 Em resumo, termos X como o Preditor(Predictor) e Y como o Alvo(Target)
 
-## Exemplo
-## Dados de treinamento(Training Data)
+## Exemplo | Dados de treinamento(Training Data)
 
 Supondo que tenhamos os seguintes valores:
 ```
