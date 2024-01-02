@@ -42,9 +42,55 @@ Index | area_quadrada | num_de_quartos | valor_da_casa |
 3     |      075      |       03       |   4.978,000   |
 ```
 
-Temos assim uma equação estimada mais ou menos assim:
+Além disso temos uma equação estimada:
 ```
 valor_casa1 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
 valor_casa2 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
 valor_casa3 = 3.000,000 + (peso1 * area_quadrada) + (peso2 * num_de_quartos)
+```
+
+Para os valores já conhecidos podemos apenas subistituir:
+```
+valor_casa1 = 3.000,000 + (peso1 * 91) + (peso2 * 4)
+valor_casa2 = 3.000,000 + (peso1 * 82) + (peso2 * 4)
+valor_casa3 = 3.000,000 + (peso1 * 75) + (peso2 * 3)
+```
+
+Agora os nossos únicos valores desconhecidos são:
+```
+peso1 = ?
+peso2 = ?
+```
+
+Precisamos encontrar uma **valor** para eles que se encaixe em **ambas situações** ao mesmo tempo.
+Começando então por um valor aleatório.
+
+Exemplo:
+Obs: Poderia ser qualquer outro valor, foi escolhido apenas de maneira aleatória.
+```
+peso1: 27,000;
+peso2: 27,000
+```
+
+Subistituindo agora nas nossas formulas os valores gerados aleatóriamente:
+```
+valor_casa1 = 3.000,000 + (27 * 91) + (27 * 4)
+valor_casa2 = 3.000,000 + (27 * 82) + (27 * 4)
+valor_casa3 = 3.000,000 + (27 * 75) + (27 * 3)
+```
+
+Agora temos uma fórmula para **estimar o valor**
+Os resultados no exemplo acima seriam:
+```
+valor_casa1 = 5.565,000;
+valor_casa2 = 5.322,000;
+valor_casa3 = 5.106,000;
+```
+
+Agora fazendo a comparação com os valores reais:
+```
+Valores Reais | Valores Estimados |
+  5.500,000   |     5.565,000     |
+  5.345,000   |     5.322,000     |
+  4.978,000   |     5.106,000     |        
 ```
