@@ -72,14 +72,15 @@ peso1: 27,000;
 peso2: 27,000
 ```
 
-Subistituindo agora nas nossas formulas os valores gerados aleatóriamente:
+Substituindo agora nas nossas formulas os valores gerados aleatóriamente:
 ```
 valor_casa1 = 3.000,000 + (27 * 91) + (27 * 4)
 valor_casa2 = 3.000,000 + (27 * 82) + (27 * 4)
 valor_casa3 = 3.000,000 + (27 * 75) + (27 * 3)
 ```
 
-Agora temos uma fórmula para **estimar o valor**
+Agora temos uma fórmula para **estimar o valor**.
+
 Os resultados no exemplo acima seriam:
 ```
 valor_casa1 = 5.565,000;
