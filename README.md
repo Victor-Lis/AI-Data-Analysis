@@ -98,3 +98,4 @@ Agora fazendo a comparação com os valores reais:
 
 ### Certo, mas e agora? Como calcular a qualidade dos resultados?
 Através de uma função de custo(Cost Function), que serve para medir a performace de um model.
+Ela quantifica o erro com base nos **valores estimados** e nos **valores reais** na forma de um **número real inteiro**.
