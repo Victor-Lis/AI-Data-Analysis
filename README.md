@@ -26,3 +26,17 @@ A **IA** vai traçar um **model** (uma espécie de função que sirva para obter
 ```js
 const f = (x) => console.log(`x: ${x} | y: ${(x*2)+1}`)
 ```
+
+## Como qualificar a qualidade dos resultados?
+Para isso existem alguns métodos, vamos ver:
+
+### Exemplo | Dados de treinamento(Training Data)
+Nesse exemplo, vamos supor que fossemos avaliar o valor de uma casa(y) através de alguns valores(x), por exemplo: área_quadrada e num_de_quartos.
+
+Supondo que tenhamos os seguintes valores:
+```
+Index | area_quadrada | num_de_quartos | valor_da_casa
+1     |      091      |       04       |   5.500,000
+2     |      082      |       04       |   5.345,000
+3     |      075      |       03       |   4.978,000
+```
