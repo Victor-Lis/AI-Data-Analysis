@@ -35,11 +35,11 @@ Nesse exemplo, vamos supor que fossemos avaliar o valor de uma casa(y) através 
 
 Supondo que tenhamos os seguintes valores:
 ```
-      |               X                |       Y       | 
-Index | area_quadrada | num_de_quartos | valor_da_casa |
-1     |      091      |       04       |   5.500,000   |
-2     |      082      |       04       |   5.345,000   |
-3     |      075      |       03       |   4.978,000   |
+|       |               X                |       Y       | 
+| Index | area_quadrada | num_de_quartos | valor_da_casa |
+|   1   |      091      |       04       |   5.500,000   |
+|   2   |      082      |       04       |   5.345,000   |
+|   3   |      075      |       03       |   4.978,000   |
 ```
 
 Além disso temos uma equação estimada:
@@ -89,8 +89,8 @@ valor_casa3 = 5.106,000;
 
 Agora fazendo a comparação com os valores reais:
 ```
-Valores Reais | Valores Estimados |
-  5.500,000   |     5.565,000     |
-  5.345,000   |     5.322,000     |
-  4.978,000   |     5.106,000     |        
+| Valores Reais | Valores Estimados |
+|  5.500,000   |     5.565,000     |
+|  5.345,000   |     5.322,000     |
+|  4.978,000   |     5.106,000     |        
 ```
