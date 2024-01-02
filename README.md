@@ -4,8 +4,10 @@ Esse é o repositório de explicação de como as IAs podem ser analisadas e com
 ## Como uma IA de Regressão funciona?
 Ela basicamente vai se assemelhar bastante a uma função matématica ou uma função das linguagens de programação.
 Temos várias características e valores que são o **X** que através de uma fórmula gerarão o **Y**, a IA basicamente vai descobrir essa fórmula.
+Em resumo, termos X como o Preditor(Predictor) e Y como o Alvo(Target)
 
 ## Exemplo
+## Dados de treinamento(Training Data)
 
 Supondo que tenhamos os seguintes valores:
 ```
