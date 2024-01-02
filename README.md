@@ -98,4 +98,25 @@ Agora fazendo a comparação com os valores reais:
 
 ### Certo, mas e agora? Como calcular a qualidade dos resultados?
 Através de uma função de custo(Cost Function), que serve para medir a performace de um model.
+
 Ela quantifica o erro com base nos **valores estimados** e nos **valores reais** na forma de um **número real inteiro**.
+
+### Existem várias métricas para isso, vamos entender:
+
+1° - Vamos calcular o erro:
+```
+|       |               X                |       Y       |                |                                  |
+| Index | area_quadrada | num_de_quartos | valor_da_casa | valor_estimado | erro(diferenca_entre_os_valores) |
+|   1   |      091      |       04       |   5.500,000   -    5.565,000   =            -65,000               |
+|   2   |      082      |       04       |   5.345,000   -    5.322,000   =             23,000               |
+|   3   |      075      |       03       |   4.978,000   -|   5.106,000   =           -128,000               |  
+```
+
+2° - Iremos somar os erros, para garantir que os erros não vão se anular, vamos torná los todos positivos:
+```
+|       |               X                |       Y       |                |             |               | 
+| Index | area_quadrada | num_de_quartos | valor_da_casa | valor_estimado |  erro(y-y') | erro_absoluto |
+|   1   |      091      |       04       |   5.500,000   -    5.565,000   =   -65,000   |     65,000    |  
+|   2   |      082      |       04       |   5.345,000   -    5.322,000   =    23,000   |     23,000    |   
+|   3   |      075      |       03       |   4.978,000   -|   5.106,000   =  -128,000   |    128,000    |
+```
