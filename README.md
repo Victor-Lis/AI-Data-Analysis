@@ -90,7 +90,10 @@ valor_casa3 = 5.106,000;
 Agora fazendo a comparação com os valores reais:
 ```
 | Valores Reais | Valores Estimados |
-|  5.500,000   |     5.565,000     |
-|  5.345,000   |     5.322,000     |
-|  4.978,000   |     5.106,000     |        
+|   5.500,000   |     5.565,000     |
+|   5.345,000   |     5.322,000     |
+|   4.978,000   |     5.106,000     |
 ```
+
+### Certo, mas e agora? Como calcular a qualidade dos resultados?
+Através de uma função de custo(Cost Function), que serve para medir a performace de um model.
