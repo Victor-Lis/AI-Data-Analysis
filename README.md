@@ -1,7 +1,7 @@
 # AI-Data-Analysis
 Esse é o repositório de explicação de como as IAs podem ser analisadas e com quais métodos, antes de tudo, vamos para uma explicação
 
-## Como uma IA de Regressão funciona?
+# Como uma IA de Regressão funciona?
 Ela basicamente vai se assemelhar bastante a uma função matématica ou uma função das linguagens de programação.
 Temos várias características e valores que são o **X** que através de uma fórmula gerarão o **Y**, a IA basicamente vai descobrir essa fórmula.
 Em resumo, termos X como o Preditor(Predictor) e Y como o Alvo(Target)
@@ -27,19 +27,19 @@ A **IA** vai traçar um **model** (uma espécie de função que sirva para obter
 const f = (x) => console.log(`x: ${x} | y: ${(x*2)+1}`)
 ```
 
-## Como qualificar a qualidade dos resultados?
+# Como qualificar a qualidade dos resultados?
 Para isso existem alguns métodos, vamos ver:
 
-### Exemplo | Dados de treinamento(Training Data)
+## Exemplo | Dados de treinamento(Training Data)
 Nesse exemplo, vamos supor que fossemos avaliar o valor de uma casa(y) através de alguns valores(x), por exemplo: área_quadrada e num_de_quartos.
 
 Supondo que tenhamos os seguintes valores:
 ```
-|       |               X                |       Y       | 
-| Index | area_quadrada | num_de_quartos | valor_da_casa |
-|   1   |      091      |       04       |   5.500,000   |
-|   2   |      082      |       04       |   5.345,000   |
-|   3   |      075      |       03       |   4.978,000   |
+|       |               X                |        Y        | 
+| Index | area_quadrada | num_de_quartos |  valor_da_casa  |
+|   1   |      091      |       04       |   R$5.500,000   |
+|   2   |      082      |       04       |   R$5.345,000   |
+|   3   |      075      |       03       |   R$4.978,000   |
 ```
 
 Além disso temos uma equação estimada:
@@ -90,33 +90,48 @@ valor_casa3 = 5.106,000;
 
 Agora fazendo a comparação com os valores reais:
 ```
-| Valores Reais | Valores Estimados |
-|   5.500,000   |     5.565,000     |
-|   5.345,000   |     5.322,000     |
-|   4.978,000   |     5.106,000     |
+|  Valores Reais  |   Valores Estimados |
+|   R$5.500,000   |     R$5.565,000     |
+|   R$5.345,000   |     R$5.322,000     |
+|   R$4.978,000   |     R$5.106,000     |
 ```
 
-### Certo, mas e agora? Como calcular a qualidade dos resultados?
+## Certo, mas e agora? Como calcular a qualidade dos resultados?
 Através de uma função de custo(Cost Function), que serve para medir a performace de um model.
 
 Ela quantifica o erro com base nos **valores estimados** e nos **valores reais** na forma de um **número real inteiro**.
 
-### Existem várias métricas para isso, vamos entender:
+## Existem várias métricas para isso, vamos entender:
+
+### MAE
 
 1° - Vamos calcular o erro:
 ```
-|       |               X                |       Y       |                |                                  |
-| Index | area_quadrada | num_de_quartos | valor_da_casa | valor_estimado | erro(diferenca_entre_os_valores) |
-|   1   |      091      |       04       |   5.500,000   -    5.565,000   =            -65,000               |
-|   2   |      082      |       04       |   5.345,000   -    5.322,000   =             23,000               |
-|   3   |      075      |       03       |   4.978,000   -|   5.106,000   =           -128,000               |  
+|       |               X                |        Y         |       Y'        |              |
+| Index | area_quadrada | num_de_quartos |  valor_da_casa  |  valor_estimado  |  erro(y-y')  |
+|   1   |      091      |       04       |   R$5.500,000   -    R$5.565,000   =  -R$65,000   |
+|   2   |      082      |       04       |   R$5.345,000   -    R$5.322,000   =   R$23,000   |
+|   3   |      075      |       03       |   R$4.978,000   -    R$5.106,000   =  -R$128,000  |  
 ```
 
 2° - Iremos somar os erros, para garantir que os erros não vão se anular, vamos torná los todos positivos:
 ```
-|       |               X                |       Y       |                |             |               | 
-| Index | area_quadrada | num_de_quartos | valor_da_casa | valor_estimado |  erro(y-y') | erro_absoluto |
-|   1   |      091      |       04       |   5.500,000   -    5.565,000   =   -65,000   |     65,000    |  
-|   2   |      082      |       04       |   5.345,000   -    5.322,000   =    23,000   |     23,000    |   
-|   3   |      075      |       03       |   4.978,000   -|   5.106,000   =  -128,000   |    128,000    |
+|       |               X                |        Y        |        Y'       |               |               | 
+| Index | area_quadrada | num_de_quartos |  valor_da_casa  |  valor_estimado |   erro(y-y')  | erro_absoluto |
+|   1   |      091      |       04       |   R$5.500,000   -   R$5.565,000   =   -R$65,000   |   R$65,000    |  
+|   2   |      082      |       04       |   R$5.345,000   -   R$5.322,000   =    R$23,000   |   R$23,000    |   
+|   3   |      075      |       03       |   R$4.978,000   -   R$5.106,000   =   -R$128,000  |   R$128,000   |
+```
+
+3° - Agora vamos calcular o "custo do erro", a partir da seguinte função:
+```
+Explicação:
+(todos os erros absolutos somas) / (pela quantidade erros somados)
+
+Prática (usando o nosso caso):
+(65,000+23,000+128,000) / 3 = 72,000
+
+O resultado é conhecido como Mean Absolute Error(MAE), ou em português algo como Erro Absoluto Médio.
+
+Em outras palavras é como se com base na análise do MAE, chegassemos na conclusão que o nosso modelo erra cerca R$72,000 nas suas previsões.
 ```
