@@ -10,15 +10,16 @@ Em resumo, termos X como o Preditor(Predictor) e Y como o Alvo(Target)
 
 Supondo que tenhamos os seguintes valores:
 ```
-x: 1 | y: 3
-x: 2 | y: 5 
-x: 3 | y: 7 
-x: 4 | y: 9 
-x: 5 | y: 11
-x: 6 | y: 13
-x: 7 | y: 15
-x: 8 | y: 17
-x: 9 | y: 19
+Predict | Target
+x: 1    | y: 3
+x: 2    | y: 5 
+x: 3    | y: 7 
+x: 4    | y: 9 
+x: 5    | y: 11
+x: 6    | y: 13
+x: 7    | y: 15
+x: 8    | y: 17
+x: 9    | y: 19
 ```
 
 A **IA** vai traçar uma função que sirva para obtermos os seguintes valores, no caso a função que **IA** iria traçar seria (em JS):
