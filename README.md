@@ -69,7 +69,7 @@ Exemplo:
 Obs: Poderia ser qualquer outro valor, foi escolhido apenas de maneira aleatória.
 ```
 peso1: 27,000;
-peso2: 27,000
+peso2: 27,000;
 ```
 
 Substituindo agora nas nossas formulas os valores gerados aleatóriamente:
