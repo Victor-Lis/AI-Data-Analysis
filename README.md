@@ -102,7 +102,7 @@ Através de uma função de custo(Cost Function), que serve para medir a perform
 
 Ela quantifica o erro com base nos **valores estimados** e nos **valores reais** na forma de um **número real inteiro**.
 
-## Existem várias métricas para isso, vamos entender:
+## Existem várias métricas para isso, no caso vou explicar 2, vamos entender:
 
 ### MAE(Mean Absolute Error)
 
