@@ -176,8 +176,8 @@ chegassemos na conclusão que o custo do modelo é 7.046E+09.
 Quanto menor for o valor resultante da Cost Function ou Função de Custo, melhor será a precisão do nosso modelo. Se for 0, quer dizer que não haverá erros, porém já é considerado muito eficiente quando próximo 1.
 
 # Fonte
-Esse conteúdo acima foi traduzido do (vídeo)[https://www.youtube.com/watch?v=A6jKo7OjAKw] "07. Value Prediction using Linear Regression in Python | Artificial Intelligence & Machine Learning", do canal no Youtube "Education is Life".
+O conteúdo acima foi traduzido do [vídeo](https://www.youtube.com/watch?v=A6jKo7OjAKw): "07. Value Prediction using Linear Regression in Python | Artificial Intelligence & Machine Learning", do canal no Youtube "Education is Life".
 
 ## Autores
-- (Victor-Lis, tradutor e adaptador do conteúdo)[https://github.com/Victor-Lis)
-- (Joed Goh, dono do conteúdo e explicações originais)[https://www.youtube.com/@joedgoh/featured)
+- [Victor-Lis, tradutor e adaptador do conteúdo](https://github.com/Victor-Lis);
+- [Joed Goh, dono do conteúdo e explicações originais](https://www.youtube.com/@joedgoh/featured).
