@@ -66,6 +66,7 @@ Precisamos encontrar uma **valor** para eles que se encaixe em **ambas situaçõ
 Começando então por um valor aleatório.
 
 Exemplo:
+
 Obs: Poderia ser qualquer outro valor, foi escolhido apenas de maneira aleatória.
 ```
 peso1: 27,000;
