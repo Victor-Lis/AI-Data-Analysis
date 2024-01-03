@@ -173,7 +173,7 @@ chegassemos na conclusão que o custo do modelo é 7.046E+09.
 ```
 
 ### R2 (Coeficiente de Determinação)
-O R² nos informa que percentual é eliminado do erro de previsão na variável ‍ quando usamos a regressão de mínimos quadrados sobre a variável ‍ . Como resultado, ‍ também é chamado de coeficiente de determinação.
+O R² nos informa que percentual é eliminado do erro de previsão na variável ‍ quando usamos a regressão de mínimos quadrados sobre a variável. Como resultado, ‍ também é chamado de coeficiente de determinação.
 
 Deixo aqui o [link](https://pt.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/a/r-squared-intuition) da explicação na Khan Academy.
 
