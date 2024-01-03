@@ -172,6 +172,14 @@ Em outras palavras é como se com base na análise do MSE,
 chegassemos na conclusão que o custo do modelo é 7.046E+09.
 ```
 
+### R2 (Coeficiente de Determinação)
+```
+Pequeno resumo:
+O R² nos informa que percentual é eliminado do erro de previsão na variável ‍ quando usamos a regressão de mínimos quadrados sobre a variável ‍ . Como resultado, ‍ também é chamado de coeficiente de determinação.
+
+Deixo aqui o link da explicação na Khan Academy:
+https://pt.khanacademy.org/math/ap-statistics/bivariate-data-ap/assessing-fit-least-squares-regression/a/r-squared-intuition#:~:text=O%20R%C2%B2%20nos%20informa%20que,chamado%20de%20coeficiente%20de%20determina%C3%A7%C3%A3o.
+```
 ## Em resumo
 Quanto menor for o valor resultante da Cost Function ou Função de Custo, melhor será a precisão do nosso modelo. Se for 0, quer dizer que não haverá erros, porém já é considerado muito eficiente quando próximo 1.
 
