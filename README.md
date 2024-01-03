@@ -126,7 +126,7 @@ Ela quantifica o erro com base nos **valores estimados** e nos **valores reais**
 3° - Agora vamos calcular o "custo do erro", a partir da seguinte função:
 ```
 Explicação:
-(todos os erros absolutos somas) / (pela quantidade erros somados)
+(todos os erros absolutos somados) / (pela quantidade erros somados)
 
 Prática (usando o nosso caso):
 (65,000+23,000+128,000) / 3 = 72,000
@@ -136,3 +136,40 @@ O resultado é conhecido como Mean Absolute Error(MAE), ou em português algo co
 Em outras palavras é como se com base na análise do MAE,
 chegassemos na conclusão que o nosso modelo erra cerca R$72,000 nas suas previsões.
 ```
+
+### MSE(Mean Squared Error)
+
+1° - Vamos calcular o erro:
+```
+|       |               X                |        Y         |       Y'        |              |
+| Index | area_quadrada | num_de_quartos |  valor_da_casa  |  valor_estimado  |  erro(y-y')  |
+|   1   |      091      |       04       |   R$5.500,000   -    R$5.565,000   =  -R$65,000   |
+|   2   |      082      |       04       |   R$5.345,000   -    R$5.322,000   =   R$23,000   |
+|   3   |      075      |       03       |   R$4.978,000   -    R$5.106,000   =  -R$128,000  |  
+```
+
+2° - Iremos somar os erros, para garantir que os erros não vão se anular, vamos torná los todos positivos:
+```
+|       |               X                |        Y        |        Y'       |               |
+| Index | area_quadrada | num_de_quartos |  valor_da_casa  |  valor_estimado |   erro(y-y')  | 
+|   1   |      091      |       04       |   R$5.500,000   -   R$5.565,000   =   -R$65,000   |   
+|   2   |      082      |       04       |   R$5.345,000   -   R$5.322,000   =    R$23,000   |  
+|   3   |      075      |       03       |   R$4.978,000   -   R$5.106,000   =   -R$128,000  |
+```
+
+3° - Agora vamos calcular o "custo do erro", a partir da seguinte função:
+```
+Explicação:
+(todos os erros absolutos elevados individualmente a 2 e depois somados) / (pela quantidade erros somados)
+
+Prática (usando o nosso caso):
+(65,000^2)+(23,000^2)+(128,000^2) / 3 = 7.046E+09
+
+O resultado é conhecido como Mean Squared Error(MSE), ou em português algo como Erro Quadrático Médio.
+
+Em outras palavras é como se com base na análise do MSE,
+chegassemos na conclusão que o custo do modelo é 7.046E+09.
+```
+
+## Em resumo
+Quanto menor for o valor resultante da Cost Function ou Função de Custo, melhor será a precisão do nosso modelo.
